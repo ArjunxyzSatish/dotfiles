@@ -15,20 +15,21 @@ Plug 'dense-analysis/ale'
 
 call plug#end()
 
+colors zenburn
 
-if has('gui_running')
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme zenburn
-endif
+"if has('gui_running')
+"  set background=dark
+"  colorscheme solarized
+"else
+"  colorscheme zenburn
+"endif
 
 set relativenumber
 
 let python_highlight_all=1
 syntax on
 
-call togglebg#map("<F5>")
+"call togglebg#map("<F5>")
 
 
 let g:ycm_autoclose_preview_window_after_completion=1
@@ -56,15 +57,15 @@ nnoremap <C-H> <C-W><C-H>
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
-" Enable folding with the spacebar
+"Enable folding with the spacebar
 nnoremap <space> za
 
 " ALE
-let g:ale_linters = {
-\   'dart': ['language_server'],
-\}
+"let g:ale_linters = {
+"\   'dart': ['language_server'],
+"\}
 
-let g:ale_fixers = {
-\   'dart': ['dartfmt'],
-\}
-
+"let g:ale_fixers = {
+"\   'dart': ['dartfmt'],
+"\}
+1
